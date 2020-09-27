@@ -1,5 +1,5 @@
 const pool_id='us-west-2_F6xy4VOdm';
-const app_client_id='7mnda9559gq61gijqa04ov4a59';
+const app_client_id='29oe783vaj5sp4km0l4polsj8h';
 const region='us-west-2';
 
 global.fetch = require('node-fetch');
