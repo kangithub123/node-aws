@@ -1,0 +1,10 @@
+var express = require('express');
+var router = express.Router();
+var authController = require('./Controllers/AuthController');
+var authMiddleware = require('./Middleware/AuthMiddleware');
+var crudController = require('./Controllers/CrudController');
+router.post('/auth/register', authController.register);
+router.post('/auth/login', authController.login);
+router.post('/auth/validate', authController.validate_token);
+router.get('/posts', authMiddleware.Validate, crudController.simple_hello);
+module.exports = router;
