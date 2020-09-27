@@ -1,3 +1,5 @@
+const request = require('request');
+
 const pool_id='us-west-2_F6xy4VOdm';
 const region='us-west-2';
 
